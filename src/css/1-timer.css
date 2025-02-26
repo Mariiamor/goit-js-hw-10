@@ -1,0 +1,101 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+@import url('./header.css');
+@import url('./back-link.css');
+@import url('./footer.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 48px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: #2e2f42;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.datatime {
+    display: flex;
+    gap: 8px;
+}
+  #datetime-picker,
+  [data-start] {
+      display: block;
+      border-radius: 4px;
+      line-height: inherit;
+      font-size: inherit;
+      font-family: inherit;
+      letter-spacing: 0.04em;
+  }
+  #datetime-picker {
+      position: relative;
+      border: 1px solid #808080;
+      width: 280px;
+      padding: 7px 15px;
+      color: inherit;
+      transition: border-color 250ms linear;
+  }
+  #datetime-picker:hover {
+      border: 1px solid #000000;
+  }
+
+  #datetime-picker:focus {
+      border: 1px solid #4e75ff;
+  }
+
+  #datetime-picker:disabled {
+      color: #808080;
+      background-color: #fafafa;
+      cursor: default;
+  }
+  button[data-start] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4e75ff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  button[data-start]:disabled {
+    background-color: #cfcfcf;
+    cursor: default;
+    color: #989898;
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 24px;
+  }
+  
+  .field {
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .value {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+  }
+  
